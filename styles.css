@@ -1,0 +1,73 @@
+:root {
+  --bg-color: #f0f4f8;
+  --text-color: #000;
+  --btn-color: #007bff;
+  --btn-hover: #0056b3;
+  --lap-bg: #e9ecef;
+}
+
+body.dark {
+  --bg-color: #121212;
+  --text-color: #fff;
+  --btn-color: #6c63ff;
+  --btn-hover: #5148ff;
+  --lap-bg: #1e1e1e;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+#display {
+  font-size: 2.5em;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.buttons button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  background: var(--btn-color);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.buttons button:hover {
+  background: var(--btn-hover);
+}
+
+#laps {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#laps li {
+  background: var(--lap-bg);
+  padding: 8px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
